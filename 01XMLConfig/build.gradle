@@ -1,0 +1,43 @@
+plugins {
+    id 'java-library'
+    id 'war'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-dependencies:3.4.1"
+    }
+}
+
+dependencies {
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    compileOnly 'org.apache.tomcat.embed:tomcat-embed-core'
+    implementation 'org.slf4j:slf4j-api'
+    runtimeOnly 'ch.qos.logback:logback-classic'
+    testImplementation 'org.springframework:spring-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}

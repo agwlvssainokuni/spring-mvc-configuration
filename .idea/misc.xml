@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/01XMLConfig" />
     <file type="web" url="file://$PROJECT_DIR$/02WebXml+JavaConfig" />
     <file type="web" url="file://$PROJECT_DIR$/03JavaConfig" />
     <file type="web" url="file://$PROJECT_DIR$/04SpringBoot" />
