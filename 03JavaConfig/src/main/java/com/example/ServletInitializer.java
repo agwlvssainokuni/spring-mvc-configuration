@@ -16,7 +16,9 @@
 
 package com.example;
 
+import jakarta.servlet.Filter;
 import org.springframework.lang.NonNull;
+import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -38,6 +40,13 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
+    }
+
+    @Override
+    protected Filter[] getServletFilters() {
+        return new Filter[]{
+                new DelegatingFilterProxy("springSecurityFilterChain")
+        };
     }
 
 }
