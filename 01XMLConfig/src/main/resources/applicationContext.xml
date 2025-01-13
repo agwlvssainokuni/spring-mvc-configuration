@@ -12,4 +12,6 @@
 
     <mvc:annotation-driven/>
 
+    <import resource="applicationContext-security.xml"/>
+
 </beans>
