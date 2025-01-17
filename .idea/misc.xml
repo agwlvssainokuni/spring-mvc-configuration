@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/02WebXml+JavaConfig" />
     <file type="web" url="file://$PROJECT_DIR$/03JavaConfig" />
     <file type="web" url="file://$PROJECT_DIR$/04SpringBoot" />
+    <file type="web" url="file://$PROJECT_DIR$/10SpringBootActuatorShutdown" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21.0.5" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

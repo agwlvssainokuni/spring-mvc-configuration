@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="10SpringBootActuatorShutdown.spring-mvc-04SpringBoot" target="21" />
+      <module name="10SpringBootActuatorShutdown.spring-mvc-04SpringBoot.main" target="21" />
+      <module name="10SpringBootActuatorShutdown.spring-mvc-04SpringBoot.test" target="21" />
+      <module name="spring-mvc-10SpringBoot+ActuatorShutdown" target="21" />
+      <module name="spring-mvc-10SpringBoot+ActuatorShutdown.main" target="21" />
+      <module name="spring-mvc-10SpringBoot+ActuatorShutdown.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
