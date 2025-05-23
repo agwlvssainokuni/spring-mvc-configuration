@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'war'
     id 'io.spring.dependency-management' version '1.1.7'
-    id 'org.springframework.boot' version '3.4.2'
+    id 'org.springframework.boot' version '3.4.6'
 }
 
 java {
@@ -27,7 +27,7 @@ repositories {
 
 dependencyManagement {
     imports {
-        mavenBom "org.springframework.boot:spring-boot-dependencies:3.4.2"
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:3.4.6'
     }
 }
 
